@@ -1,0 +1,33 @@
+// salario.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+void main()
+
+{
+	int n,i;
+	float salario,neto1=0,neto2=0;
+	cout<<"ingrese el numero de empleados \n\n";
+	cin>>n;
+	for(i=0;i<n;i++)
+	{
+		cout<<"ingrese el salario : \n\n";
+		cin>>salario;
+			if(salario>15000)
+					neto1=neto1+salario-(0.261*salario);
+			else 
+				if(salario>2840)
+					neto1=neto1+salario-(0.251*salario);
+				
+				else 
+					neto1=neto1+salario-(0.121*salario);
+				
+	}
+	float promedio;
+		promedio=(neto1+neto2)/n;
+		cout<<"el promedio es : "<<promedio;
+			getch();
+}

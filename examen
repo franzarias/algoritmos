@@ -1,0 +1,48 @@
+// examen.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include <string>
+#define max 10;
+using namespace std;
+struct matriz 
+{
+	char mat [max][max];
+};
+
+void cargar(matriz vec[],int n, string cad);
+void mostrar(matriz vec[],int n, string cad);
+void main()
+{
+	string cadena;
+	int numero;
+	cout<<" ingrese la cadena :     ";
+	getline(cin,cadena);
+	cout<<" ingrese el numero de elementos:   ";
+	cin>>numero;
+	cargar(vec, n, cadena);
+	mostrar(vec,n );
+}
+void mostrar(matriz vec[],int n)
+{int i,j,k;
+	for(i=0;i<n;i++)
+		for(j=0;j<n;j++)
+			for(k=0;k<n;k++)
+				cout<<"["<<i<<"].["<<j<<"].["<<k<<"]="<<vec[i].mat[j][k]<<endl;
+}
+
+void cargar(matriz vec[],int n, string cad);
+{int i,j,k,l=0;
+	for(j=0;j<n;j++)
+		{for(i=0;i<n;++)
+			{for(k=0;k<n;k++)
+				{vec[i].mat[j][k]=cad[l];
+					l++
+	}
+	if(l==cadena.lenght())
+		l=o;
+	}
+	}
+}
